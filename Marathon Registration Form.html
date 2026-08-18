@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marathon Registration Form</title>
+</head>
+
+<body>
+    <h1>Marthon Registration!</h1>
+    <form action="registerconfirm.html">
+        <label for="firstname">First Name</label>
+        <input type="text" placeholder="Enter your first name" name="firstname" id="firstname" required>
+        <label for="lastname">Last Name</label>
+        <input type="text" placeholder="Enter your last name" name="lastname" id="lastname" required>
+
+        <p>
+            <label>Select a Race:</label>
+        </p>
+        <!--Create a radio button menu-->
+        <p>
+            <input type="radio" name="Marathon" id="Tampa" value="Tampa" required>
+            <label for="Tampa">Tampa Marathon</label>
+        </p>
+        <p>
+            <input type="radio" name="Marathon" id="Orlando" value="Orlando" required>
+            <label for="Orlando">Orlando Marathon</label>
+        </p>
+        <p>
+            <input type="radio" name="Marathon" id="Miami" value="Miami" required>
+            <label for="Miami">Miami Marathon</label>
+        </p>
+        <!--Create a email/password menu-->
+        <p>
+            <label for="email"> Email:</label>
+            <input type="email" placeholder="Enter your email" name="email" id="email" required>
+            <label for="password">Password:</label>
+            <input type="password" placeholder="Enter your password" name="password" id="password" required>
+        </p>
+        <!--Create a dropdown menu-->
+        <p>
+            <label for="agegroup">Age Group:</label>
+            <select name="ages" id="ages" required>
+                <option value="Under 18">Under 18</option>
+                <option value="18-30">18-30</option>
+                <option value="31-50">31-50</option>
+                <option value="51-70">51-70</option>
+                <option value="Over 70">Over 70</option>
+            </select>
+        </p>
+        <button>Register!</button>
+    </form>
+
+</body>
+
+</html>
